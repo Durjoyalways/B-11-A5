@@ -12,6 +12,7 @@
             color: white;           
             cursor: not-allowed;   
         }
+        
     </style>
 </head>
 <body class="bg-[#ebf5fb]">
@@ -156,17 +157,20 @@
                 <p class="text-[20px]">Activity Log</p>
             </div>
             <div class="flex justify-center item-center mt-[16px]">
-                <button  class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">Clear History</button>
+                <button id="clear-btn"  class=" bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">Clear History</button>
             </div>
 
 
             <div class="w-full border-t-2 border-dotted border-gray-500/10  my-4"></div>
 
-        
+        <div id="added">
+
+        </div>
 
         </div>
     </main>
-
+    <script src="back.js"></script>
     <script src="alert.js"></script>
+    
 </body>
 </html>
