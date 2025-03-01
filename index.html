@@ -6,6 +6,13 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <title>Dev board</title>
+    <style>
+        .best-btn:disabled{
+            background-color: gray; 
+            color: white;           
+            cursor: not-allowed;   
+        }
+    </style>
 </head>
 <body class="bg-[#ebf5fb]">
     <header>
@@ -18,7 +25,7 @@
             <div class="flex gap-[38px] ">
                 <div class="flex gap-[10px] py-[10px] relative mr-[40px]">
                     <img src="images/checkbox.png" alt="" class="h-[32px] w-[32px]">
-                    <p class="font-bold text-3xl absolute left-[50px] top-[7px]">23</p>
+                    <p id="changingNumber" class="font-bold text-3xl absolute left-[50px] top-[7px]">23</p>
                 </div>
                
                 <img src="images/theme-btn.png" alt="" class="h-[40px] w-[40px] mt-[5px]">
@@ -36,12 +43,12 @@
     <img src="images/checkbox.png" alt="" class="w-[28px] h-[28px]">
     <div class="mt-[-6px]">
         <p class="text-[rgba(0, 48, 60, 1)]">Task Assigned </p>
-        <p class="text-3xl font-bold">05</p>
+        <p id="changedNumber" class="text-3xl font-bold">05</p>
     </div>
 </div>
 
 <!-- 2 -->
-<div class="flex w-[488px] h-[128px] ml-[-70px] rounded-2xl" style="background-image: linear-gradient(to right, #3752FD, #6C7FFA, #9BA8F8)">
+<div id="notun-page" class="flex w-[488px] h-[128px] ml-[-70px] rounded-2xl" style="background-image: linear-gradient(to right, #3752FD, #6C7FFA, #9BA8F8)">
     <img src="images/board.png" alt="" class="w-[56px] h-[64px] mt-[30px] ml-[50px]">
     <p class="text-white text-2xl py-[30px] px-[20px]">Discover Something <br> New Today!</p>
 </div>
@@ -64,7 +71,7 @@
           <p class="mt-[18px] bg-white py-[16px] px-[10px] rounded-1xl">Debug using Chrome DevTools, check for overlapping ...</p>
           <div class="flex justify-between mt-[25px]">
             <p>Deadline <br>21 March 2025</p>
-            <button class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
+            <button class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
               Completed
             </button>
           </div>
@@ -76,7 +83,7 @@
           <p class="mt-[18px] bg-white py-[16px] px-[10px] rounded-1xl">Store the user's preference in localStorage, update CSS  ...</p>
           <div class="flex justify-between mt-[25px]">
             <p>Deadline <br>21 March 2025</p>
-            <button class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
+            <button class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
               Completed
             </button>
           </div>
@@ -88,7 +95,7 @@
           <p class="mt-[18px] bg-white py-[16px] px-[10px] rounded-1xl">Debug using Chrome DevTools, check for overlapping.. </p>
           <div class="flex justify-between mt-[25px]">
             <p>Deadline <br>21 March 2025</p>
-            <button class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
+            <button class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
               Completed
             </button>
           </div>
@@ -100,7 +107,7 @@
           <p class="mt-[18px] bg-white py-[16px] px-[10px] rounded-1xl">Debug using Chrome DevTools, check for overlapping ...</p>
           <div class="flex justify-between mt-[25px]">
             <p>Deadline <br>21 March 2025</p>
-            <button class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
+            <button class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
               Completed
             </button>
           </div>
@@ -112,7 +119,7 @@
           <p class="mt-[18px] bg-white py-[16px] px-[10px] rounded-1xl">Debug using Chrome DevTools, check for overlapping ...</p>
           <div class="flex justify-between mt-[25px]">
             <p>Deadline <br>21 March 2025</p>
-            <button class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
+            <button class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
               Completed
             </button>
           </div>
@@ -124,7 +131,7 @@
           <p class="mt-[18px] bg-white py-[16px] px-[10px] rounded-1xl">Debug using Chrome DevTools, check for overlapping ...</p>
           <div class="flex justify-between mt-[25px]">
             <p>Deadline <br>21 March 2025</p>
-            <button class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
+            <button class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">
               Completed
             </button>
           </div>
@@ -149,7 +156,7 @@
                 <p class="text-[20px]">Activity Log</p>
             </div>
             <div class="flex justify-center item-center mt-[16px]">
-                <button  class="bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">Clear History</button>
+                <button  class="best-btn bg-[#3752FD] text-white font-semibold py-2 px-8 rounded-xl hover:bg-blue-600">Clear History</button>
             </div>
 
 
@@ -159,5 +166,7 @@
 
         </div>
     </main>
+
+    <script src="alert.js"></script>
 </body>
 </html>
