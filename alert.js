@@ -35,7 +35,7 @@
             font-family: Arial, sans-serif;
             border-radius: 3px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        ">You have completed the task fix mobile button issue 
+        ">You have completed the task 
        at:${timeString}
         </p>`; // 0 ms delay to add content immediately after the alert closes
     }
