@@ -18,7 +18,7 @@
 
     event.target.disabled = true;
 
-     // Get the current date and time
+     // Get the current date and time at the activity log
      let currentTime = new Date();
      let timeString = currentTime.toLocaleTimeString(); 
  
@@ -37,7 +37,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         ">You have completed the task 
        at:${timeString}
-        </p>`; // 0 ms delay to add content immediately after the alert closes
+        </p>`;
     }
     )
 
@@ -83,7 +83,7 @@ box.addEventListener('click', boxClick);
 
 
 
-// hiden
+
 document.getElementById('clear-btn').addEventListener('click', function() {
     const section = document.getElementById('added');
     section.style.display = 'none'; 
